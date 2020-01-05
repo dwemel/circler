@@ -8,13 +8,13 @@ import writeFile from '../writeFile.mjs';
 import moment from 'moment';
 
 export default {
-  command: 'summary [duration]',
+  command: 'summary',
   handler: async argv => {
-    const { email, password, from, to, duration, dir, accessories: accessoryNames } = argv;
+    const { email, password, from, to, dir, accessories: accessoryNames } = argv;
 
     const dur = moment(duration, 'h:mm');
-    const hours = Math.max(0, Math.min(24, dur.isValid() ? dur.hours() : 1));
-    const minutes = Math.max(0, Math.min(24, dur.isValid() ? dur.minutes() : 0));
+    const hours = 24;
+    const minutes = 0;
 
     const login = await getLogin({ email, password });
 
