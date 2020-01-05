@@ -4,6 +4,7 @@ import getFileDate from './getFileDate.mjs';
 
 export default (dir, date, name, buffer) => {
   var name = name.replace(" ","_");
+  var buffer = buffer.replace(" ","_");
   const datePath = getFileDate(date);
   const fullPath = resolve(dir, datePath, name);
   const dirName = dirname(fullPath);
