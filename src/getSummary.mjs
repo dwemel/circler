@@ -13,7 +13,7 @@ export default async (sessionCookie, accessory, from, to) => {
     },
     body: JSON.stringify({
       summaryDescription: {
-        maxPlaybackDuration: 60000,
+        maxPlaybackDuration: 600000,
         showOnlyFiller: false,
         timeSegments: [
           { startTime: from.toISOString(), endTime: to.toISOString() }
