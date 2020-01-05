@@ -12,7 +12,7 @@ export default {
   handler: async argv => {
     const { email, password, from, to, dir, accessories: accessoryNames } = argv;
 
-    const hours = 24;
+    const hours = 1;
     const minutes = 0;
 
     const login = await getLogin({ email, password });
