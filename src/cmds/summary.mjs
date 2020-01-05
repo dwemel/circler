@@ -12,7 +12,6 @@ export default {
   handler: async argv => {
     const { email, password, from, to, dir, accessories: accessoryNames } = argv;
 
-    const dur = moment(duration, 'h:mm');
     const hours = 24;
     const minutes = 0;
 
