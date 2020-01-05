@@ -1,1 +1,1 @@
-export default date => date.format('a hh mm')
+export default date => date.format('HH:mm')
