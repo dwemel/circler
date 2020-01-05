@@ -3,7 +3,7 @@ import { mkdirSync, existsSync, writeFile } from 'fs';
 import getFileDate from './getFileDate.mjs';
 
 export default (dir, date, name, buffer) => {
-  const name = name.replace("\ ","_");
+  var name = name.replace(" ","_");
   const datePath = getFileDate(date);
   const fullPath = resolve(dir, datePath, name);
   const dirName = dirname(fullPath);
