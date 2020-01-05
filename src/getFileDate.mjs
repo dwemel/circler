@@ -1,1 +1,1 @@
-export default date => date.format('YYYY-MM-dd')
+export default date => date.format('YYYY-MM-DD')
